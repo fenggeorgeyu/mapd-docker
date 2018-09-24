@@ -1,5 +1,5 @@
 
-name=mapd-dk-`whoami`
+name=mapd-gpu-`whoami`
 image=mapd/mapd-ce-cuda
 
 host_dir=$(shell pwd)
@@ -20,11 +20,6 @@ create: create-mapd
 create-mapd:
 	[ -d ${vol1} ] || mkdir ${vol1}
 	docker run --runtime=nvidia -d -it --name ${name} -v ${vol1}:${mnt1} -p ${pl1}:${pdk1} ${image}
-
-# docker run --runtime=nvidia \
-# -v $HOME/mapd-docker-storage:/mapd-storage \
-# -p 9090-9092:9090-9092 \
-# mapd/mapd-ce-cuda
 
 bash:
 	docker exec -it ${name} /bin/bash
