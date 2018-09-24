@@ -13,7 +13,7 @@ pdk1=9090-9092
 passwd=HyperInteractive
 
 pull:
-	docker pull 
+	docker pull ${image}
 
 create: create-mapd
 
