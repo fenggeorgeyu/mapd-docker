@@ -1,5 +1,5 @@
 
-MapD docker
+% MapD docker
 
 [MapD docker documentation](https://www.mapd.com/docs/latest/1_0_tutorials.html)
 
