@@ -31,4 +31,9 @@ To delete containers
 
 	make delete
 
+Some screenshots:
+
+![Dashboard](figure/dashboard.png)
+![Data Manager](figure/data_manager.png)
+![SQL Editor](figure/sql_editor.png)
 
